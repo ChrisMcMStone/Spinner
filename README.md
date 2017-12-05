@@ -1,12 +1,12 @@
 # Spinner: Semi-Automatic Detection of Pinning without Hostname verification
 
-To compile:
+**To compile:**
 
 On Linux: ```javac -cp .:libs/* *.java```
 
 On Windows: ```javac -cp ".;libs/*" *.java```
 
-To run:
+**To run:**
 
 On Linux: ```sudo java -cp .:libs/* Launcher --help```
 

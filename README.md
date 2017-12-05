@@ -3,11 +3,13 @@
 To compile:
 
 On Linux: ```javac -cp .:libs/* *.java```
+
 On Windows: ```javac -cp ".;libs/*" *.java```
 
 To run:
 
 On Linux: ```sudo java -cp .:libs/* Launcher --help```
+
 On Windows: ```sudo java -cp ".;libs/*" Launcher --help```
 
 

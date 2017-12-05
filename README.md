@@ -4,6 +4,8 @@ Tool to enable black box detection of applications that pin to non-leaf TLS cert
 
 Spinner analyses the certificate chain of the requested domains and redirects TLS traffic to other sites, which it finds on Censys.io, that use the same certificate chain. The handshake is then proxied to determine if encrypted application data is sent by the app to the domain that the app is not expecting.
 
+For more details see our [paper](http://www.cs.bham.ac.uk/~garciaf/publications/spinner.pdf)
+
 
 **To compile:**
 

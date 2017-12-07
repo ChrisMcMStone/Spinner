@@ -35,6 +35,6 @@ Run the tool without using Censys by manually specifying a redirect domain.
 ```sudo java -cp .:libs/* Launcher -m google.com```
 
 
-**Disclaimer: This tool is intended for research use, and is currently undergoing further development. We welcome any feedback which can be provided by raising issues or pull requests. **
+**Disclaimer**: This tool is intended for research use, and is currently undergoing further development. We welcome any feedback which can be provided by raising issues or pull requests.
 
 

@@ -218,7 +218,7 @@ public class MITM implements Runnable {
                                 case 23:
                                     if(verbose > 1) System.out.println("    " + messageCount + ". Sending application data to server");
                                     outLog.println("    " + messageCount + ". Sending application data to server");
-                                    //finished = true;
+                                    finished = true;
                                     break;
                                 case 20:
                                     if(verbose > 1) System.out.println("    " + messageCount + ". Client ChangeCipherSpec");

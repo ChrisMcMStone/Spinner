@@ -62,6 +62,8 @@ public class MITM implements Runnable {
                 if(verbose > 0) System.out.println("# Connection with client made");
                 outLog.println("# Connection with client made");
                 if((forwardingHost == null || forwardingHost.isEmpty()) && !passthrough) {
+                    if(verbose > 0) System.out.println("# Connection with client made");
+                    outLog.println("WARNING: No redirect host set, dropping connection. Ensure DNS requests are directed to Spinner, or set redirect host manually with -m flag.");
                     connectionWaiting = true;
                     continue;
                 }

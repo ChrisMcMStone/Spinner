@@ -48,6 +48,7 @@ public class FakeDNS implements Runnable {
         this.verbose = verbose;
         this.outLog = outLog;
         this.redirectHost = redirectHost;
+        mitm.setForwardingHost(redirectHost);
         this.dnsOnly = dnsOnly;
         this.passthrough = passthrough;
         this.realDNSserver=config.dnsIP;

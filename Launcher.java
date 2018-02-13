@@ -60,7 +60,14 @@ public class Launcher {
             return;
         }
 	
-        Config config = new Config(main.configFile, main.whiteListFile);
+        Config config = null;
+        try {
+            config = new Config(main.configFile, main.whiteListFile);
+        } catch (FileNotFoundException e) {
+            System.out.println("ERROR: " + e.getMessage());
+            jc.usage();
+            return;
+        }
 
         if(main.logFile == null) {
             main.logFile = "log-" + LocalDateTime.now();

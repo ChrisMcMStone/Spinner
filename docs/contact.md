@@ -10,7 +10,7 @@ Or any questions on the research in general, contact <a href="mailto:c.mcmahon-s
 
 **Publications**
 
-* Spinner: Spinner: Semi-Automatic Detection of Pinning without Hostname Verification
+* Spinner: Semi-Automatic Detection of Pinning without Hostname Verification
 [cite](https://dl.acm.org/citation.cfm?id=3134628), [paper](https://www.cs.bham.ac.uk/~tpc/Papers/spinner.pdf)
 
 The work on this project began with a general analysis of TLS usage in UK mobile banking apps. This included various TLS certificate mis-verification vulnerabilites, in addition to phishing attacks. Details of this work can be found here:

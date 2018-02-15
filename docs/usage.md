@@ -48,6 +48,10 @@ If your app is detected as vulnerable. You can narrow down the exact hostname ve
 
 * The app accepts any valid certificate (but for wrong hostname) by redirecting the traffic to ```wrong.host.badssl.com```
 
+**Vulnerable apps**
+
+Example vulnerable APKs are linked to on [this](vulnerabilites.md) page. 
+
 <br><br>
 
 **Disclaimer**: This tool is intended for research use, and is currently undergoing further development. We welcome any feedback which can be provided by raising issues or pull requests.

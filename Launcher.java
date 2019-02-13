@@ -30,7 +30,7 @@ public class Launcher {
         boolean help = false;
     @Parameter(names={"-p", "--passthrough"}, description = "No redirection, just proxy traffic", required = false)
         boolean passthrough = false;
-    @Parameter(names={"--whitelist", "-w"}, description = "Optional new line delimited file of domains that should not be spoofed to our TLS proxy.", required = false)
+    @Parameter(names={"--whitelist", "-w"}, description = "New line delimited file of domains to spoof to our TLS proxy.", required = false)
         String whiteListFile;
     @Parameter(names={"--config", "-c"}, description = "Config file containing required DNS IP and Censys account credentials", required = true)
         String configFile;

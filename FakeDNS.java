@@ -48,7 +48,9 @@ public class FakeDNS implements Runnable {
         this.verbose = verbose;
         this.outLog = outLog;
         this.redirectHost = redirectHost;
-        mitm.setForwardingHost(redirectHost);
+	if(!dnsOnly) {
+	    mitm.setForwardingHost(redirectHost);
+	}
         this.dnsOnly = dnsOnly;
         this.passthrough = passthrough;
         this.realDNSserver=config.dnsIP;
@@ -95,7 +97,7 @@ public class FakeDNS implements Runnable {
                     String urlRequested = parseDNSrequest(origDNSrequest);
 
                     int resultInt = Utils.stringListMatch(urlRequested,allowList);
-                    if (resultInt>-1) {
+                    if (resultInt<0) {
                         if (verbose>1) System.out.println("- Requested URL: "+urlRequested+" on allow list. Returning real DNS response.");
                         outLog.println("- Requested URL: "+urlRequested+" on allow list. Returning real DNS response.");
                         // Request real response from the real DNS server
